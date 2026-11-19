@@ -1,5 +1,8 @@
-// Entry program for news-image-20261119, round 2 (Node 22, standard library only).
-// Round 2 rebuilds the page on the winning structure: a light cream newspaper
+// Entry program for news-image-20261119, round 3 (Node 22, standard library only).
+// Round 3 keeps round 2's winning structure and the same 42 verified stories,
+// but rebuilds the type scale for legibility at 300px: bigger headlines, decks
+// and list type throughout, more air between cards, a slimmer 4-slot timeline
+// and shorter hero/mid illustrations. The image is entry.png beside this file;
 // front page, 1024x1024, with 42 verified stories — 3 hero cards with large
 // drawn scenes (Shenzhen trilateral summit, GTA VI's release, Anthropic's
 // record $81.3bn IPO), 12 mid cards with small drawings (the ICJ's 9-6 Myanmar

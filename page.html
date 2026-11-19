@@ -14,7 +14,7 @@
   body { background: var(--paper); }
   .page {
     width: 1024px; height: 1024px; margin: 0 auto;
-    padding: 8px 20px 6px;
+    padding: 6px 16px 4px;
     background: var(--paper); color: var(--ink);
     font-family: "Noto Serif", "DejaVu Serif", Georgia, serif;
     overflow: hidden;
@@ -51,14 +51,14 @@
   .datebox .w { font-size: 8.5px; font-weight: 800; letter-spacing: 2px; }
   .subline {
     text-align: center; font-style: italic; font-weight: 700;
-    font-size: 13.5px; line-height: 1.3; color: var(--red); margin-top: 3px;
+    font-size: 14.5px; line-height: 1.25; color: var(--red); margin-top: 3px;
   }
 
   /* ---------- region bar ---------- */
   .regions {
     display: flex; margin-top: 4px;
     font-family: "Noto Sans", "DejaVu Sans", sans-serif;
-    font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   }
   .regions div { flex: 1; text-align: center; color: #fff; padding: 3px 0; font-variant-numeric: tabular-nums; }
   .regions .r-af { background: #2b3a4a; } .regions .r-ap { background: #b01e24; }
@@ -75,10 +75,10 @@
   .stat:first-child { border-left: none; }
   .stat .n {
     font-family: "Noto Serif Display", "Noto Serif", serif; font-weight: 900;
-    font-size: 19px; line-height: 1.05; color: var(--red); font-variant-numeric: tabular-nums;
+    font-size: 21px; line-height: 1.05; color: var(--red); font-variant-numeric: tabular-nums;
   }
   .stat .l {
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 8.3px; font-weight: 700;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9px; font-weight: 700;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--mut); margin-top: 2px; line-height: 1.3;
   }
 
@@ -89,17 +89,17 @@
     font-family: "Noto Sans", "DejaVu Sans", sans-serif;
   }
   .timeline .tlabel {
-    flex: 0 0 118px; font-size: 9.5px; font-weight: 800; letter-spacing: 1.6px;
+    flex: 0 0 132px; font-size: 9.5px; font-weight: 800; letter-spacing: 1.2px;
     text-transform: uppercase; color: var(--ink); align-self: center;
   }
-  .timeline .slot { flex: 1; padding: 0 7px; border-left: 1px solid var(--hair); }
-  .timeline .tm { font-size: 9.5px; font-weight: 800; color: var(--red); font-variant-numeric: tabular-nums; }
-  .timeline .tx { font-size: 9.5px; font-weight: 600; color: #33302a; line-height: 1.3; margin-top: 1px; }
+  .timeline .slot { flex: 1; padding: 0 8px; border-left: 1px solid var(--hair); }
+  .timeline .tm { font-size: 10px; font-weight: 800; color: var(--red); font-variant-numeric: tabular-nums; }
+  .timeline .tx { font-size: 10px; font-weight: 600; color: #33302a; line-height: 1.35; margin-top: 1px; white-space: nowrap; }
 
   /* ---------- hero cards ---------- */
-  .heroes { display: flex; gap: 12px; margin-top: 5px; }
+  .heroes { display: flex; gap: 12px; margin-top: 4px; }
   .hero { flex: 1; min-width: 0; }
-  .hero svg.scene { display: block; width: 100%; height: 78px; }
+  .hero svg.scene { display: block; width: 100%; height: 68px; }
   .num {
     display: inline-block; width: 19px; height: 19px; line-height: 19px; text-align: center;
     border-radius: 50%; background: var(--red); color: #fff;
@@ -107,84 +107,83 @@
     font-variant-numeric: tabular-nums; vertical-align: 1px;
   }
   .kick {
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9px; font-weight: 700;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9.5px; font-weight: 700;
     letter-spacing: 0.12em; text-transform: uppercase; color: var(--red);
   }
   .tag {
     float: right; font-family: "Noto Sans", "DejaVu Sans", sans-serif;
-    font-size: 7.5px; font-weight: 800; letter-spacing: 0.08em; color: #fff;
+    font-size: 8px; font-weight: 800; letter-spacing: 0.08em; color: #fff;
     padding: 2px 5px; border-radius: 2px; margin-top: 1px;
   }
   .tag.rep { background: var(--green); } .tag.fc { background: var(--amber); } .tag.cl { background: var(--red); }
   .hero h2 {
     font-family: "Noto Serif Display", "Noto Serif", serif; font-weight: 900;
-    font-size: 17px; line-height: 1.18; letter-spacing: -0.005em; margin-top: 2px; color: var(--ink);
+    font-size: 19.5px; line-height: 1.15; letter-spacing: -0.005em; margin-top: 2px; color: var(--ink);
     text-wrap: balance;
   }
-  .hero p { font-size: 11px; line-height: 1.45; color: #33302a; margin-top: 3px; text-wrap: pretty; }
+  .hero p { font-size: 12.5px; line-height: 1.5; color: #33302a; margin-top: 3px; text-wrap: pretty; }
   .hero .krow { margin-top: 3px; }
 
   /* ---------- mid grid ---------- */
-  .mids { display: flex; gap: 10px; margin-top: 6px; }
+  .mids { display: flex; gap: 12px; margin-top: 5px; }
   .mid { flex: 1; min-width: 0; border-top: 2.5px solid var(--ink); padding-top: 0; }
-  .mid svg.scene { display: block; width: 100%; height: 32px; }
+  .mid svg.scene { display: block; width: 100%; height: 26px; }
   .mid .num { width: 15px; height: 15px; line-height: 15px; font-size: 9px; }
-  .mid .kick { font-size: 7.8px; letter-spacing: 0.1em; }
-  .mid .tag { font-size: 6.8px; padding: 1px 4px; }
+  .mid .kick { font-size: 8.5px; letter-spacing: 0.1em; }
+  .mid .tag { font-size: 7.5px; padding: 1px 4px; }
   .mid .krow { margin-top: 2px; }
   .mid h3 {
     font-family: "Noto Serif Display", "Noto Serif", serif; font-weight: 900;
-    font-size: 12px; line-height: 1.2; margin-top: 2px; color: var(--ink);
-    text-wrap: balance;
+    font-size: 13.5px; line-height: 1.22; margin-top: 2px; color: var(--ink);
   }
-  .mid p { font-size: 9.6px; line-height: 1.38; color: #33302a; margin-top: 2px; text-wrap: pretty; }
-  .mids2 { margin-top: 5px; }
+  .mid p { font-size: 11px; line-height: 1.45; color: #33302a; margin-top: 2px; text-wrap: pretty; }
+  .mids2 { margin-top: 4px; }
 
   /* ---------- bottom row ---------- */
-  .bottom { display: flex; gap: 12px; margin-top: 6px; padding-top: 4px; border-top: 1px solid var(--rule); }
-  .mapbox { flex: 0 0 330px; }
-  .mapbox svg { display: block; width: 330px; height: 168px; }
+  .bottom { display: flex; gap: 10px; margin-top: 5px; padding-top: 4px; border-top: 1px solid var(--rule); }
+  .mapbox { flex: 0 0 280px; }
+  .mapbox svg { display: block; width: 280px; height: 140px; }
   .maplabel { font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9px; font-weight: 700; fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
   .sect {
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 10px; font-weight: 700;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); margin-bottom: 2px;
   }
   .sect span { color: var(--red); }
   .alsobox { flex: 1; min-width: 0; }
-  .alsocols { display: flex; gap: 14px; }
+  .alsocols { display: flex; gap: 10px; }
   .alsocol { flex: 1; min-width: 0; }
-  .alsoitem { font-size: 9.3px; line-height: 1.22; color: #2b2822; padding: 0; white-space: nowrap; }
+  .alsoitem { font-size: 11px; line-height: 1.3; color: #2b2822; padding: 0; white-space: nowrap; }
   .alsoitem .no { font-family: "Noto Serif Display", serif; font-weight: 900; color: var(--red); font-variant-numeric: tabular-nums; }
   .alsoitem b { color: var(--ink); }
-  .rail { flex: 0 0 216px; }
+  .rail { flex: 0 0 200px; }
   .verdict {
     background: var(--navy); color: #fff; padding: 6px 9px 7px;
     font-family: "Noto Sans", "DejaVu Sans", sans-serif;
   }
-  .verdict .vh { font-size: 9px; font-weight: 800; letter-spacing: 0.14em; color: #f2c94c; }
+  .verdict .vh { font-size: 9.5px; font-weight: 800; letter-spacing: 0.14em; color: #f2c94c; }
   .verdict .vb {
     font-family: "Noto Serif Display", "Noto Serif", serif; font-weight: 900;
-    font-size: 14.5px; line-height: 1.2; margin-top: 3px;
+    font-size: 15px; line-height: 1.2; margin-top: 3px;
   }
-  .verdict .vd { font-size: 9.6px; line-height: 1.4; margin-top: 3px; color: #dfe6ef; }
+  .verdict .vd { font-size: 10px; line-height: 1.4; margin-top: 3px; color: #dfe6ef; }
   .legend { margin-top: 5px; font-family: "Noto Sans", "DejaVu Sans", sans-serif; }
-  .legend .lh { font-size: 9px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
-  .legend .li { font-size: 9.2px; line-height: 1.4; color: #33302a; margin-top: 2px; }
+  .legend .lh { font-size: 9.5px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+  .legend .li { font-size: 9.6px; line-height: 1.4; color: #33302a; margin-top: 2px; }
   .legend .li .tag { float: none; display: inline-block; margin: 0 3px 0 0; vertical-align: 0; }
   .markets { margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--rule); font-family: "Noto Sans", "DejaVu Sans", sans-serif; }
-  .markets .mh { font-size: 9px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
-  .markets .mi { display: flex; justify-content: space-between; font-size: 9.6px; line-height: 1.45; color: #33302a; }
+  .markets .mh { font-size: 9.5px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+  .markets .mi { display: flex; justify-content: space-between; font-size: 10px; line-height: 1.45; color: #33302a; }
   .markets .mi b { color: var(--ink); font-variant-numeric: tabular-nums; }
 
   /* ---------- date check + footer ---------- */
   .datecheck {
     margin-top: 5px; padding: 4px 8px; border: 1.5px solid var(--red);
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9.6px; line-height: 1.45; color: #33302a;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 10.5px; line-height: 1.4; color: #33302a;
   }
   .datecheck b { color: var(--red); letter-spacing: 0.1em; }
   .foot {
     margin-top: 3px; padding-top: 3px; border-top: 1px solid var(--rule);
-    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9.2px; line-height: 1.45; color: var(--mut);
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9.5px; line-height: 1.45; color: var(--mut);
     text-align: center;
   }
   .foot b { color: var(--ink); }
@@ -234,8 +233,6 @@
     <div class="slot"><div class="tm">09:30 NEW YORK</div><div class="tx">ANT shares begin trading</div></div>
     <div class="slot"><div class="tm">10:00 THE HAGUE</div><div class="tx">Court reads Myanmar verdict</div></div>
     <div class="slot"><div class="tm">12:45 SHENZHEN</div><div class="tx">Trump and Xi meet alone</div></div>
-    <div class="slot"><div class="tm">P.M. SHENZHEN</div><div class="tx">Three leaders sit down together</div></div>
-    <div class="slot"><div class="tm">FRIDAY</div><div class="tx">Cyclone Akvan landfall due</div></div>
   </div>
 
   <!-- ================= HERO ROW: 3 BIG STORIES ================= -->
@@ -266,7 +263,7 @@
       </svg>
       <div class="krow"><span class="num">1</span> <span class="kick">Shenzhen &middot; Summit</span><span class="tag rep">Reported</span></div>
       <h2>Trump, Xi and Putin hold first three-way summit</h2>
-      <p>The leaders of the US, China and Russia met beside the APEC summit. Nuclear arms, Ukraine and Iran were on the agenda.</p>
+      <p>The US, China and Russia leaders met at APEC; nuclear arms, Ukraine and Iran on the agenda.</p>
     </div>
     <div class="hero">
       <svg class="scene" viewBox="0 0 320 98" preserveAspectRatio="none" aria-hidden="true">
@@ -296,7 +293,7 @@
       </svg>
       <div class="krow"><span class="num">2</span> <span class="kick">Worldwide &middot; Games</span><span class="tag rep">Reported</span></div>
       <h2>GTA VI arrives after a 13-year wait</h2>
-      <p>Rockstar&rsquo;s sequel unlocks at midnight in each country, New Zealand first. Reviews average 99 on Metacritic; PS5 and Xbox only.</p>
+      <p>Rockstar&rsquo;s sequel unlocks at midnight, New Zealand first. Reviews average 99; PS5 and Xbox only.</p>
     </div>
     <div class="hero">
       <svg class="scene" viewBox="0 0 320 98" preserveAspectRatio="none" aria-hidden="true">
@@ -313,7 +310,7 @@
       </svg>
       <div class="krow"><span class="num">3</span> <span class="kick">New York &middot; Markets</span><span class="tag rep">Reported</span></div>
       <h2>Anthropic debuts in the biggest IPO on record</h2>
-      <p>The maker of Claude raised $81.3bn, pricing 980m shares at $83 and passing SpaceX&rsquo;s $75bn record. Trading begins today.</p>
+      <p>Claude&rsquo;s maker raised $81.3bn at $83 a share &mdash; past SpaceX&rsquo;s $75bn record. Trading starts today.</p>
     </div>
   </div>
 
@@ -337,8 +334,8 @@
         <circle cx="77" cy="25" r="2" fill="#b01e24"/>
       </svg>
       <div class="krow"><span class="num">4</span> <span class="kick">The Hague &middot; Law</span><span class="tag rep">Reported</span></div>
-      <h3>World Court: Myanmar committed genocide</h3>
-      <p>Judges ruled 9&ndash;6: Myanmar meant to destroy the Rohingya; 10,000 killed.</p>
+      <h3>ICJ: Myanmar committed genocide</h3>
+      <p>9&ndash;6: Myanmar guilty of genocide; 10,000 killed.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -352,7 +349,7 @@
       </svg>
       <div class="krow"><span class="num">5</span> <span class="kick">Gulf &middot; War</span><span class="tag rep">Reported</span></div>
       <h3>Iran hits back at US bases in the Gulf</h3>
-      <p>Drones fired at Kuwait and Bahrain after US jets struck IRGC sites on Qeshm.</p>
+      <p>Drones hit Kuwait, Bahrain after US jets struck Qeshm.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -368,7 +365,7 @@
       </svg>
       <div class="krow"><span class="num">6</span> <span class="kick">Gaza &middot; War</span><span class="tag rep">Reported</span></div>
       <h3>Israel launches Gaza ground operation</h3>
-      <p>Tanks cross the Yellow Line near Bureij; 3 Palestinians killed on Wednesday.</p>
+      <p>Tanks cross the Yellow Line; 3 Palestinians killed.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -386,8 +383,8 @@
         <circle cx="140" cy="8" r="5" fill="#f2c94c"/>
       </svg>
       <div class="krow"><span class="num">7</span> <span class="kick">Kerch Strait &middot; War</span><span class="tag rep">Reported</span></div>
-      <h3>Crimean Bridge hit for third time in a week</h3>
-      <p>Road arch fell into the strait; road shut, rail partly back.</p>
+      <h3>Crimean Bridge hit a third time</h3>
+      <p>Arch fell into the strait; road shut, rail partly back.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -403,7 +400,7 @@
       </svg>
       <div class="krow"><span class="num">8</span> <span class="kick">Odisha &middot; Storm</span><span class="tag fc">Forecast</span></div>
       <h3>Cyclone Akvan bears down on India</h3>
-      <p>Tens of thousands evacuated; landfall due Friday, winds near 110 km/h.</p>
+      <p>72,000 evacuated; landfall Friday, winds 110 km/h.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -418,7 +415,7 @@
       </svg>
       <div class="krow"><span class="num">9</span> <span class="kick">Antalya &middot; Climate</span><span class="tag rep">Reported</span></div>
       <h3>COP31 enters its last 48 hours</h3>
-      <p>Fossil-fuel text stuck again; ministers take over in Antalya.</p>
+      <p>Fossil-fuel text stuck; ministers take over.</p>
     </div>
   </div>
 
@@ -437,8 +434,8 @@
         <g stroke="#fff" stroke-width="1" opacity="0.8"><path d="M8 37 Q40 34 72 37 M84 38 Q118 35 150 38"/></g>
       </svg>
       <div class="krow"><span class="num">10</span> <span class="kick">Florida &middot; Weather</span><span class="tag rep">Reported</span></div>
-      <h3>Floods shut South Florida schools again</h3>
-      <p>Up to 15.3 inches fell in a day; Broward closed schools a second day.</p>
+      <h3>Florida floods shut schools</h3>
+      <p>15.3 inches fell; schools shut a second day.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -453,7 +450,7 @@
       </svg>
       <div class="krow"><span class="num">11</span> <span class="kick">New York &middot; Art</span><span class="tag rep">Reported</span></div>
       <h3>Van Gogh sells for $190.4m, a record</h3>
-      <p>Blossoming Chestnut Trees tops the artist&rsquo;s auction record at Sotheby&rsquo;s.</p>
+      <p>Chestnut Trees tops the artist&rsquo;s record at Sotheby&rsquo;s.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -468,7 +465,7 @@
       </svg>
       <div class="krow"><span class="num">12</span> <span class="kick">Jerusalem &middot; War</span><span class="tag cl">Claim</span></div>
       <h3>Netanyahu urges Trump to hit Iran</h3>
-      <p>Israel&rsquo;s PM wants a 4&ndash;7 day joint air campaign; Trump has not decided.</p>
+      <p>PM seeks 4&ndash;7 day air campaign; Trump undecided.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -481,7 +478,7 @@
       </svg>
       <div class="krow"><span class="num">13</span> <span class="kick">Dhaka &middot; Politics</span><span class="tag rep">Reported</span></div>
       <h3>Bangladesh lockdown turns violent</h3>
-      <p>Violence in 28 of 64 districts; Yunus&rsquo;s ancestral home burned.</p>
+      <p>Violence in 28 of 64 districts; Yunus&rsquo;s home burned.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -497,7 +494,7 @@
       </svg>
       <div class="krow"><span class="num">14</span> <span class="kick">Yongbyon &middot; War</span><span class="tag rep">Reported</span></div>
       <h3>North Korea expands uranium enrichment</h3>
-      <p>IAEA: Yongbyon expansion finished in late October; up to 28 cascades.</p>
+      <p>IAEA: Yongbyon expansion done; up to 28 cascades.</p>
     </div>
     <div class="mid">
       <svg class="scene" viewBox="0 0 155 42" preserveAspectRatio="none" aria-hidden="true">
@@ -510,8 +507,8 @@
         <circle cx="86" cy="10" r="4" fill="#f2c94c"/>
       </svg>
       <div class="krow"><span class="num">15</span> <span class="kick">Caracas &middot; Politics</span><span class="tag rep">Reported</span></div>
-      <h3>US signs military pact in Caracas</h3>
-      <p>Hegseth&rsquo;s visit is the first by a Pentagon chief since January.</p>
+      <h3>US signs Caracas military pact</h3>
+      <p>First Pentagon chief visit since January.</p>
     </div>
   </div>
 
@@ -555,14 +552,14 @@
           <div class="alsoitem"><span class="no">16</span> &nbsp;<b>AUSTRALIA</b> &mdash; Jobless rate up to 4.9%.</div>
           <div class="alsoitem"><span class="no">17</span> &nbsp;<b>IMF</b> &mdash; Global inflation hits 4.7%.</div>
           <div class="alsoitem"><span class="no">18</span> &nbsp;<b>SENEGAL</b> &mdash; Boat capsizes off Yenne.</div>
-          <div class="alsoitem"><span class="no">19</span> &nbsp;<b>MUSK</b> &mdash; $446m spending &ldquo;pretty foolish&rdquo;.</div>
-          <div class="alsoitem"><span class="no">20</span> &nbsp;<b>AUSTRALIA</b> &mdash; Sanctions 3 Israelis, 4 groups</div>
-          <div class="alsoitem"><span class="no">21</span> &nbsp;<b>WEST BANK</b> &mdash; Woman shot dead in Jericho.</div>
+          <div class="alsoitem"><span class="no">19</span> &nbsp;<b>MUSK</b> &mdash; $446m &ldquo;pretty foolish&rdquo;.</div>
+          <div class="alsoitem"><span class="no">20</span> &nbsp;<b>AUSTRALIA</b> &mdash; Sanctions on settlers.</div>
+          <div class="alsoitem"><span class="no">21</span> &nbsp;<b>WEST BANK</b> &mdash; Woman shot dead, Jericho.</div>
           <div class="alsoitem"><span class="no">22</span> &nbsp;<b>WEST BANK</b> &mdash; Israel freezes E1 tenders.</div>
-          <div class="alsoitem"><span class="no">23</span> &nbsp;<b>TOKYO</b> &mdash; India, Japan hold 2+2 dialogue.</div>
+          <div class="alsoitem"><span class="no">23</span> &nbsp;<b>TOKYO</b> &mdash; India-Japan 2+2 dialogue.</div>
           <div class="alsoitem"><span class="no">24</span> &nbsp;<b>DELHI</b> &mdash; Schools reopen; AQI 204.</div>
           <div class="alsoitem"><span class="no">25</span> &nbsp;<b>BADMINTON</b> &mdash; Sindhu back in top five.</div>
-          <div class="alsoitem"><span class="no">26</span> &nbsp;<b>CRICKET</b> &mdash; India begin Test in Wellington.</div>
+          <div class="alsoitem"><span class="no">26</span> &nbsp;<b>CRICKET</b> &mdash; India Test in Wellington.</div>
           <div class="alsoitem"><span class="no">27</span> &nbsp;<b>EBOLA</b> &mdash; WHO keeps Congo emergency.</div>
           <div class="alsoitem"><span class="no">28</span> &nbsp;<b>EBOLA</b> &mdash; Trials of two new vaccines.</div>
           <div class="alsoitem"><span class="no">29</span> &nbsp;<b>MEASLES</b> &mdash; US loses elimination status.</div>
@@ -571,15 +568,15 @@
           <div class="alsoitem"><span class="no">30</span> &nbsp;<b>FOOTBALL</b> &mdash; Chelsea beat PSG 1-0.</div>
           <div class="alsoitem"><span class="no">31</span> &nbsp;<b>CRICKET</b> &mdash; England win ODI series.</div>
           <div class="alsoitem"><span class="no">32</span> &nbsp;<b>CRICKET</b> &mdash; Litton Das sets Test record.</div>
-          <div class="alsoitem"><span class="no">33</span> &nbsp;<b>FOOTBALL</b> &mdash; FIFA takes over Nigeria FA.</div>
+          <div class="alsoitem"><span class="no">33</span> &nbsp;<b>FOOTBALL</b> &mdash; FIFA runs Nigeria FA.</div>
           <div class="alsoitem"><span class="no">34</span> &nbsp;<b>CAF</b> &mdash; Assembly opens in Abuja.</div>
-          <div class="alsoitem"><span class="no">35</span> &nbsp;<b>UGANDA</b> &mdash; Landslide survivors go to UN.</div>
+          <div class="alsoitem"><span class="no">35</span> &nbsp;<b>UGANDA</b> &mdash; Landslide survivors at UN.</div>
           <div class="alsoitem"><span class="no">36</span> &nbsp;<b>ENERGY</b> &mdash; IEA: Hormuz energy threat.</div>
-          <div class="alsoitem"><span class="no">37</span> &nbsp;<b>NIGERIA</b> &mdash; Senate: justice for 37 miners.</div>
+          <div class="alsoitem"><span class="no">37</span> &nbsp;<b>NIGERIA</b> &mdash; Justice for 37 miners.</div>
           <div class="alsoitem"><span class="no">38</span> &nbsp;<b>INDIA</b> &mdash; Renewables reach 299.25 GW.</div>
           <div class="alsoitem"><span class="no">39</span> &nbsp;<b>NIGERIA</b> &mdash; Diphtheria: 28,000 cases.</div>
-          <div class="alsoitem"><span class="no">40</span> &nbsp;<b>HEALTH</b> &mdash; MERS Qatar; chikungunya Swiss.</div>
-          <div class="alsoitem"><span class="no">41</span> &nbsp;<b>CRICKET</b> &mdash; Bancroft: all knew of tampering.</div>
+          <div class="alsoitem"><span class="no">40</span> &nbsp;<b>HEALTH</b> &mdash; MERS in Qatar, chikungunya.</div>
+          <div class="alsoitem"><span class="no">41</span> &nbsp;<b>CRICKET</b> &mdash; Bancroft: all knew.</div>
           <div class="alsoitem"><span class="no">42</span> &nbsp;<b>FLORIDA</b> &mdash; St Johns River flood record.</div>
         </div>
       </div>
@@ -592,8 +589,8 @@
       </div>
       <div class="legend">
         <div class="lh">How sure are we?</div>
-        <div class="li"><span class="tag rep">Reported</span> confirmed by named sources</div>
-        <div class="li"><span class="tag cl">Claim</span> one side says so, unverified</div>
+        <div class="li"><span class="tag rep">Reported</span> named sources confirm</div>
+        <div class="li"><span class="tag cl">Claim</span> one side&rsquo;s claim</div>
         <div class="li"><span class="tag fc">Forecast</span> poll, draft or schedule</div>
       </div>
       <div class="markets">
