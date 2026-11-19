@@ -1,27 +1,14 @@
 #!/bin/sh
-# Render page.html to the 1024x1024 entry.png for news-image-20261119.
-#
-# How it works, in plain terms: open the page in headless Chromium and
-# take a screenshot, then trim the capture down to the top 1024x1024
-# square with Pillow. The page itself is exactly 1024px tall, so the
-# crop only removes whatever extra strip the browser window adds below
-# it. The browser is the Playwright Chromium on this machine unless
-# $CHROME points somewhere else. No network is needed: all fonts come
-# from the system fontconfig set and every picture is inline SVG.
-#
-# Usage: ./render.sh   (run from this directory; writes entry.png here)
-
+# Render page5.html -> entry5.png (round 5, variant B) or page5a.html -> entry5a.png.
+# Usage: ./render5.sh [5|5a]   (default 5)
 set -eu
-
 DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 cd "$DIR"
-
+V="${1:-5}"
+PAGE="page$V.html"
+OUT="entry$V.png"
 BROWSER="${CHROME:-$HOME/.cache/ms-playwright/chromium-1148/chrome-linux/chrome}"
-
-# Headless Chrome's viewport ends up a little shorter than the window
-# height, so ask for a taller window and crop back to the square.
 CAPTURE=$(mktemp --suffix=.png /tmp/ni19-capture-XXXXXX)
-
 "$BROWSER" \
   --headless=new \
   --no-sandbox \
@@ -31,12 +18,10 @@ CAPTURE=$(mktemp --suffix=.png /tmp/ni19-capture-XXXXXX)
   --virtual-time-budget=5000 \
   --window-size=1024,1111 \
   --screenshot="$CAPTURE" \
-  "file://$DIR/page.html"
-
-python3 - "$CAPTURE" "$DIR/entry.png" <<'PYEOF'
+  "file://$DIR/$PAGE"
+python3 - "$CAPTURE" "$DIR/$OUT" <<'PYEOF'
 import sys
 from PIL import Image
-
 capture_path, out_path = sys.argv[1], sys.argv[2]
 with Image.open(capture_path) as shot:
     print("captured size:", shot.size)
@@ -45,5 +30,4 @@ with Image.open(capture_path) as shot:
 with Image.open(out_path) as finished:
     print("entry size:", finished.size, "->", out_path)
 PYEOF
-
 rm -f "$CAPTURE"
