@@ -1,12 +1,14 @@
-// Entry program for news-image-20261119, round 1 (Node 22, standard library only).
-// Round 1 is the first attempt at "Sum up 19 November's world news in one image":
-// a light cream newspaper front page, 1024x1024, with 40 verified stories —
-// 6 lead cards with drawn photo-style SVG scenes (Shenzhen trilateral summit,
-// Anthropic's record $81.3bn IPO, the ICJ Myanmar ruling with NO outcome stated,
-// GTA VI's release, Iran's Gulf retaliation, Israel's Gaza ground operation),
-// a small world map with 8 pinned places, field bars that sum to 40, and a
-// 34-item ALSO list. The image is entry.png beside this file; the program
-// copies it to /output/entry.png, where the judge reads exactly those bytes.
+// Entry program for news-image-20261119, round 2 (Node 22, standard library only).
+// Round 2 rebuilds the page on the winning structure: a light cream newspaper
+// front page, 1024x1024, with 42 verified stories — 3 hero cards with large
+// drawn scenes (Shenzhen trilateral summit, GTA VI's release, Anthropic's
+// record $81.3bn IPO), 12 mid cards with small drawings (the ICJ's 9-6 Myanmar
+// genocide verdict, Iran's Gulf retaliation, the Kerch Bridge collapse, Cyclone
+// Akvan, COP31, Florida floods and more), a region bar, a 7-number strip, a
+// day-by-hours timeline, a small world map with 9 pinned places, a 27-item
+// ALSO list, a THE VERDICT box, a confidence legend and a DATE CHECK strip.
+// The image is entry.png beside this file; the program copies it to
+// /output/entry.png, where the judge reads exactly those bytes.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
